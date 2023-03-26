@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyAnything.com</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+
+
+    
+
+    <!-- header section starts  -->
+    <header class="header">
+
+        <div class="header-1">
+    
+            <a href="#" class="logo"> <i class="fas fa-shopping-cart"></i> BuyAnything.com </a>
+    
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+    
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="login-btn" class="fas fa-user"></div>
+                <a href="#" class="fas fa-bell"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+    
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="./HTML pages/home.html" target="iframe_ab">Home</a>
+                <a href="shop now" target="iframe_ab">Shop Now</a>
+				<a href="./HTML pages/quiz.html" target="iframe_ab">Quiz</a>
+                <a href="about us" target="iframe_ab">About Us</a>
+                <a href="contact us" target="iframe_ab">Contact Us</a>
+                
+            </nav>
+        </div>
+    
+    </header>
+
+    <!--header end-->
+
+
+
+    <!--login form-->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+    
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+    
+    </div>
+
+    <!--header end with login-->
+
+
+    <!-- Body Part -->
+	<iframe src="./HTML pages/home.html" name="iframe_ab" height="1000px" width="100%" title="Iframe Example" frameborder="0"></iframe>
+	<!-- Body Part End -->
+    
+	
+	<!--editor
+	<div id="editor">
+		<a href="page editor/page-editor.html" class="fa-light fa-user-gear"> <b>Editor</b> </a>
+	</div>-->
+		
+	
+
+
+    <!--footer section starts-->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+              <h3>Shop Now</h3>
+              <a href="#"> <i class="fas fa-arrow-right"></i> Electronics </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> Fashion </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> Health & Beauty </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> Home & Garden </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> Sports </a>
+            </div>
+            
+
+            <div class="box">
+                <h3>Quiz</h3>
+                <a href="./HTML pages/quiz.html" target="iframe_ab"> <i class="fas fa-arrow-right"></i> Start Quiz </a>
+				<!--<a href="./HTML pages/quiz.html" target="iframe_ab">Quiz</a>-->
+				
+            </div>
+
+            <div class="box">
+                <h3>About Us</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Company Info </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Terms & conditions </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Our Services </a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +94 767 348 981 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +94 115 693 345 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> BuyAnything@gmail.com</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Complaints </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Returns </a>
+            </div>
+    
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="credit" >created by <span>Web designer group </span>| all rights reserved! </div>
+    </section>
+
+    <!-- footer section ends-->
+
+    <!--js code-->
+    <script>
+
+
+        searchForm = document.querySelector(".search-form");
+
+        document.querySelector("#search-btn").onclick = () =>{
+        searchForm.classList.toggle("active");
+        }
+
+        let loginForm = document.querySelector(".login-form-container");
+
+        document.querySelector("#login-btn").onclick = () =>{
+        loginForm.classList.toggle("active");
+        }
+
+        document.querySelector("#close-login-btn").onclick = () =>{
+        loginForm.classList.remove("active");
+        }
+
+        window.onscroll = () =>{
+
+            searchForm.classList.remove("active");
+        
+            if(window.scrollY > 80){
+            document.querySelector(".header .header-2").classList.add("active");
+            }else{
+            document.querySelector(".header .header-2").classList.remove("active");
+            }
+        
+        }
+        
+        window.onload = () =>{
+        
+            if(window.scrollY > 80){
+            document.querySelector(".header .header-2").classList.add("active");
+            }else{
+            document.querySelector(".header .header-2").classList.remove("active");
+            }
+        
+            fadeOut();
+        
+        }
+
+
+
+    </script>
+      
+
+
+
+
+
+</body>
+</html>

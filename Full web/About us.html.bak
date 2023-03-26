@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+     <link rel="stylesheet"  href="Aboutus.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>EBUY | About Us </title>
+</head>
+<header class="header">
+
+  <div class="header-1">
+
+      <a href="#" class="logo"> <i class="fas fa-shopping-cart"></i> EBUY.com </a>
+
+      <form action="" class="search-form">
+          <input type="search" name="" placeholder="Search here..." id="search-box">
+          <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+          
+      </div>
+
+  </div>
+
+  <div class="header-2">
+      <nav class="navbar">
+          <a href="home.html">Home</a>
+          <a href="Productpage.html">Shop Now</a>
+          <a href="About us.html">About Us</a>
+          <a href="Presentation.html">Presentation Page</a>
+          <a href="Gallery.html"> Gallery</a>
+          <a href="formDineth.html"> Sign Up</a>
+          <a href="newsletter.html">Newsletter</a>
+      </nav>
+  </div>
+
+</header>
+  </nav>
+</div>
+</div>
+
+</div>
+   <section class="team">
+     <div class="About us container">
+       <h1>OUR TEAM</h1>
+       <div class="row">
+          <div class="col-3">
+         
+           <img src="Photos/PHOTO-2022-03-21-22-04-10.jpg"  id="team" > 
+           <h3 class="overlay">Dineth hasaranga<br>Student 1</h3>
+           
+
+          </div>
+
+           
+           <div class="col-3">
+           
+              <img src="Photos/pic.jpg" id="team" > 
+              <h3 class="overlay">Dilini kudaligamage<br>Student 2</h3>
+            
+           </div>
+            
+
+            <div class="col-3">
+            
+                <img src="Photos/RLYK5548.JPG" id="team" > 
+                <h3 class="overlay">Oshan Rathnayaka<br>Student 3</h3>
+                
+            </div>
+           
+
+               <div class="col-3">
+           
+                  <img src="Photos/IMG-4610 (1).png" id="team" > 
+                  <h3 class="overlay">Roshen hasangha<br>Student 4</h3>
+                  
+
+               </div>  
+       </div>
+      </div>
+   </section>
+
+
+   <div>
+    <hr id="hr" size="8" width="150%" color="#219150" />
+    <p id="editortag"><a href="NewOshan.html">Editor's Page</a></p>
+  </div>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+}
+
+.background {
+
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  padding-bottom: 6rem;
+}
+
+/* ************************************************************* */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --green: #27ae60;
+  --dark-color: #219150;
+  --black: #444;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: var(--green);
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--dark-color);
+}
+
+.header .header-1 {
+  background: #fff;
+  padding: 1.5rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header-1 .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .header-1 .logo i {
+  color: var(--green);
+}
+
+.header .header-1 .search-form {
+  width: 50rem;
+  height: 5rem;
+  border: var(--border);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.header .header-1 .search-form input {
+  font-size: 1.6rem;
+  padding: 0 1.2rem;
+  height: 100%;
+  width: 100%;
+  text-transform: none;
+  color: var(--black);
+}
+
+.header .header-1 .search-form label {
+  font-size: 2.5rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .header-1 .search-form label:hover {
+  color: var(--green);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a {
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover {
+  color: var(--green);
+}
+
+#search-btn {
+  display: none;
+}
+
+.header .header-2 {
+  background: var(--green);
+}
+
+.header .header-2 .navbar {
+  text-align: center;
+}
+
+.header .header-2 .navbar a {
+  color: #fff;
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover {
+  background: var(--dark-color);
+}
+
+.header .header-2.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+#page-header {
+  box-sizing: content-box;
+  background-image: url("images/girl2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#page-header h2,
+#page-header p {
+  color: white;
+  font: 500 2rem "Quicksand", sans-serif;
+}
+
+.container1 {
+  margin: 0px 0px 0 0;
+  padding-top: 10px;
+  width: 260px;
+  height: 460px;
+  background-color: rgba(57, 241, 118, 0.686);
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 20px;
+  position: relative;
+  left: 6px;
+  top: 15px;
+}
+
+.main_view img {
+  width: 240px;
+  height: 400px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+#main_view {
+  font-size: 16px;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container2 {
+  margin: 10px 10px 0 0;
+  padding-top: 10px;
+  width: 280px;
+  height: 400px;
+  background-color: #39f176af;
+  float: left;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 20px;
+  position: relative;
+  left: -260px;
+  top: 500px;
+}
+
+#main_desciption {
+  font-size: 5px;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_desciption img {
+  width: 240px;
+  height: 200px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.product {
+  float: left;
+  background-color: rgb(255, 255, 255);
+  margin: 0px 0px 0 0;
+  width: 234px;
+}
+
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 20%;
+  height: 300px;
+  min-width: 250px;
+  padding: 0px 0px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  font: 500 2rem "Quicksand", sans-serif;
+  position: relative;
+  background-color: #ffffff;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+}
+
+#product1 .pro img {
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+#product1 .pro .des {
+  text-align: start;
+  padding: 5px 0;
+  line-height: 1;
+}
+
+#product1 .pro .des span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+  padding-top: 5px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#product1 .pro .des i {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/*Single Product*/
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#btn1 {
+  background-image: linear-gradient(109.6deg,
+      rgba(209, 0, 116, 1) 11.2%,
+      rgba(110, 44, 107, 1) 91.1%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#editortag {
+  position: relative;
+  top: 50px;
+  left: -620px;
+  font-size: medium;
+}
+
+#hr {
+  position: relative;
+  top: 50px;
+  width: 180%;
+  left: -620px;
+}

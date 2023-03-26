@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="../CSS pages/quiz.css">
+
+        <!--<script src="quiz.js"></script>-->
+
+        <script>
+            
+            function myFunction() {
+                let marks = 0
+
+                //Q1
+                let q1 = prompt("Which of the following describes e-commerce?\n1.Doing business electronically\n2.Doing business\n3.Sale of goods\n4.All of the above\n\nPlease enter the relevant number of the answer");
+                if   (q1 == 1)  {
+                    marks += 2 ;
+                } else {
+                    marks = marks - 1 ;
+                }                
+
+                //Q2
+                let q2 = prompt("The primary source of financing during the early years of e commerce was ____________ .\n1.Bank loans\n2.Large retail firms\n3.Venture capital funds\n4.Initial public offerings\n\nPlease enter the relevant number of the answer");
+                if   (q2 == 3)  {
+                    marks += 2 ;
+                } else {
+                    marks = marks - 1 ;
+                }
+
+                //Q3
+                let q3 = prompt("Which products are people most likely to be more uncomfortable buying on the Internet?\n1.Books\n2.Furniture\n3.Movies\n4.All of the above\n\nPlease enter the relevant number of the answer");
+                if   (q3 == 2)  {
+                    marks += 2 ;
+                } else {
+                    marks = marks - 1 ;
+                }
+
+                //Q4
+                let q4 = prompt("Which products are people most likely to be more comfortable buying on the Internet?\n1.Books\n2.PCs\n3.CDs\n4.All of the above\n\nPlease enter the relevant number of the answer");
+                if   (q4 == 4)  {
+                    marks += 2 ;
+                } else {
+                    marks = marks - 1 ;
+                }
+
+                //Q5
+                let q5 = prompt("How the transactions occur in e commerce?\n1.Using e medias\n2.Using computers only\n3.Using mobile phones only\n4.None of the above\n\nPlease enter the relevant number of the answer");
+                if   (q5 == 1)  {
+                    marks += 2 ;                    
+                } else {
+                    marks = marks - 1 ;                   
+                }
+                
+
+                if (marks >= 8){
+                    alert("Congratulation! You have earned " + marks +" points with a Gold badge.please claim the points in your next purchase.") ;
+                } else if (marks >= 6){
+                    alert("Congratulation! You have earned " + marks +" points with a Silver badge.please claim the points in your next purchase.") ;
+                } else if (marks >= 4){
+                    alert("Congratulation! You have earned " + marks +" points with a Bronze badge.please claim the points in your next purchase.") ;
+                } else {
+                    alert("Congratulation! You have earned " + marks +" points.please claim the points in your next purchase.") ;
+                }
+
+            }
+            
+
+        </script>
+
+    </head>
+<body>
+    <!--main page-->
+    <div id="quiz-home" class="start-quiz">
+        <h3>Welcome to the Quiz</h3><br><br>
+        <p>This quiz consists of five questions to measure your knowledge in e commerce.
+            Each question carries 2 marks and -1 for each wrong answer.The different badges (Gold, Silver, Bronze) will be awarded to users depending on their 
+            performance.
+        </p>
+        <button type="button" class="btn" id="btn" onclick="myFunction()">Start quiz</button>
+        
+    </div>
+
+    
+<!--editor-->
+	<div id="editor">
+		<a href="./editor-dilini.html"> <b>Editor</b> </a>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EBUY | Signup</title>
+    <link rel="stylesheet"  href="form.css">  
+    <script defer src="form.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b994a6c611.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+<header class="header">
+    <div class="header-1">
+      <a href="#" class="logo">
+        <i class="fas fa-shopping-cart"></i> EBUY.com
+      </a>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="Search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        
+      </div>
+    </div>
+
+    <div class="header-2">
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="/Productpage.html">Shop Now</a>
+        <a href="About us.html">About Us</a>
+        <a href="Presentation.html">Presentation Page</a>
+        <a href="Gallery.html"> Gallery</a>
+        <a href="formDineth.html"> Sign Up</a>
+        <a href="newsletter.html">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+<body>
+    <div class="container">
+        <form id="form" action="">
+            <h1>Personal infromation</h1>
+
+            <div class="input-control">
+                <label for="Fname">First name</label>
+                <input id="Fname" name="Fname" type="text" >
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="Lname">Last name</label>
+                <input id="Lname" name="Lname" type="text" >
+                <div class="error"></div>
+            </div>
+
+
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text"  >
+                <div class="error"></div>
+            </div>
+            
+            <div class="input-control">
+                <label for="Address">Address</label>
+                <input id="Address"name="Address" type="Address" >
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="Telephone">Telephone number</label>
+                <input id="Telephone"name="Telephone" type="Telephone"  >
+                <div class="error"></div>
+            </div>
+
+            <button type="submit" onclick="formvalidation(this.form)">Submit</button>
+
+        </form>
+    </div>
+
+
+
+    <footer>
+      <hr size="8" width="100%" color="#219150">  
+      <p id = "editortag"><a href="/Editors.html">Editor's Page</a></p>
+      </footer>
+</body>
+</html>
+
+
+
+</html>

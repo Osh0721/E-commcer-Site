@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>EBUY | Past Products</title>
+		
+        <script src="CW js.js"> </script>
+		
+        <script
+        src="https://kit.fontawesome.com/b994a6c611.js"
+        crossorigin="anonymous"
+      ></script>
+	
+		<header class="header">
+			<div class="header-1">
+			  <a href="#" class="logo">
+				<i class="fas fa-shopping-cart"></i> EBUY.com
+			  </a>
+	  
+			  <form action="" class="search-form">
+				<input
+				  type="search"
+				  name=""
+				  placeholder="Search here..."
+				  id="search-box"
+				/>
+				<label for="search-box" class="fas fa-search"></label>
+			  </form>
+	  
+			  <div class="icons">
+				
+			  </div>
+			</div>
+	  
+			<div class="header-2">
+			  <nav class="navbar">
+				<a href="home.html">Home</a>
+				<a href="Productpage.html">Shop Now</a>
+				<a href="About us.html">About Us</a>
+				<a href="Presentation.html">Presentation Page</a>
+				<a href="Gallery.html"> Gallery</a>
+				<a href="formDineth.html"> Sign Up</a>
+                <a href="newsletter.html">Newsletter</a>
+				
+			  </nav>
+			</div>
+			<link rel="stylesheet" href="CW(css).css">
+            <link rel="stylesheet" href="newsletter.css">
+            
+	  
+	</head>
+    
+
+        
+        
+   
+</head>
+<body onload="displayXML()">
+
+	
+
+    <header>
+        <div class="header_tag">
+            <div class="select1">
+                <label for="selector_1"><Strong>Background color :</Strong></label>
+                <select name="back_color" id="selector_1" onchange="color(this.value)">
+                        <option value="#D96690">Pink</option>
+                        <option value="#89c2d9">Blue</option>
+                        <option value="#A0522D">Brown</option>
+                        <option value="#00cc44">Green</option>
+                        <option value="#ffffff">white</option>
+
+                </select>
+            </div>
+
+            <div class="select2">
+                <label for="selector_2"><Strong>Font color :</Strong></label>
+                <select name="font_color" id="selector_2" onchange="changeFontColor(this)">
+                        <option value="#D96690" >Pink</option>
+                        <option value="#89c2d9" >Blue</option>
+                        <option value="#A0522D" >Brown</option>
+                        <option value="#00cc44" >Green</option>
+                        <option value="#8800cc" >Purple</option>
+
+                </select>
+
+            </div>
+
+
+
+        </div>
+    </header>
+<div id="font_cl">
+    <article class="order1">
+       
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+					 <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>
+					
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                   
+                </div>
+
+            </div>
+            
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/belt.jpg" width="250px" height="250px" alt="iphone 12 image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div> 
+					
+					
+					
+					<div class="style2">
+                    <labal for="para_3"><strong>Total :</strong></labal>
+                    <p id="para_3"></p>
+                    </div>
+                </div>
+                
+                <div class="bottom_grid3">
+                    
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>         
+            
+            </div>
+
+        </div>
+              
+    </article> 
+    <article class="order2">    
+        
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/blueT.jpg" width="250px" height="250px" alt="Macbook air image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div>   
+                
+
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                    </div>
+                </div>
+                
+                <div class="bottom_grid3">
+                     <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <article class="order3">
+        
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/f1.jpg" width="250px" height="250px" alt="Nordic image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                        </div>   
+                </div>
+                
+                <div class="bottom_grid3">
+
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <article class="order4">
+        
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/f2.jpeg" width="250px" height="250px" alt="Hd tv image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div>   
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                        </div>   
+                </div>
+                
+                <div class="bottom_grid3">
+                    
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <article class="order5">
+        
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/f3.jpg" width="250px" height="250px" alt="Sony hifi image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                        </div>   
+                </div>
+                
+                <div class="bottom_grid3">
+                    
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <article class="order6">
+        
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/f4.jpg" width="250px" height="250px" alt="Samsung ac image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div> 
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                        </div>  
+                </div>
+                
+                <div class="bottom_grid3">
+                    
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <article class="order7">
+        
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/greenS.jpg" width="250px" height="250px" alt="Samsung 8K tv">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div> 
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                        </div>  
+                </div>
+                
+                <div class="bottom_grid3">
+                    
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <article class="order8">
+        
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/orangeT.jpg" width="250px" height="250px" alt="Buggy toy image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div> 
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                        </div>  
+                </div>
+                
+                <div class="bottom_grid3">
+                    
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <article class="order9">
+       
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/yellowS.jpg" width="250px" height="250px" alt="Rcplane image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                        </div>   
+                </div>
+                
+                <div class="bottom_grid3">
+                   
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <article class="order10">
+        
+
+            <div class="header_desk">
+                <div>
+                    <h3>PURCHASED</h3>
+                </div>
+                <div>
+                    <div class="style1">
+                        <labal for="para_1">Order Id :</labal>
+                        <p id="para_1"></p>
+                    </div>    
+                    <div class="style1">
+                     <labal for="para_1">Ordered Date :</labal>
+                    <p id="para_1"></p>
+                    </div> 
+                </div>
+
+            </div>
+            <hr color="#88E8F2" style="width:1300px">
+            <div class="bottom_desk">
+                <div class="bottom_grid1">
+                    <img  id="img" src="images/watch.jpg" width="250px" height="250px" alt="iphone 13 image">
+                </div>
+                <div class="bottom_grid2">
+                    <div class="style2">
+                        <labal for="para_2">Item :</labal>
+                        <p id="para_2"></p>
+                    </div>
+                      
+                    <div class="style2">
+                        <labal for="para_2">Price :</labal>
+                        <p id="para_2"></p>
+                    </div>
+
+                    <div class="style2">
+                        <labal for="para_2">Quantity :</labal>
+                        <p id="para_2"></p>
+                    </div>  
+                    <div class="style2">
+                        <labal for="para_3"><strong>Total :</strong></labal>
+                        <p id="para_3"></p>
+                        </div> 
+                </div>
+                
+                <div class="bottom_grid3">
+                    
+                    <button type="button" id="button" onclick="alert('Item added to the cart')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</div> 
+
+<divr>
+    <hr size="8"  color="#219150">  
+    <p id = "editortag"><a href="editorspage.html">Editor's Page</a></p>
+</div>
+</body>
+</html>

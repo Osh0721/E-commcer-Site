@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/b994a6c611.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="editor-dilini css.css" />
+  </head>
+  <body>
+    
+    <div class="Editor-container">
+      <h1>Editors Page</h1>
+      <div class="Editor-Details">
+        
+        <p>My name is Dilini Amarasinghe.
+          I am an undergraduate student at Informatics Institute of Technology.
+          My field of study is Artificial Intelligence and Data Sience.<br>
+		  Web designing isn't my passion but i like to create websites in my free times.<br>
+          You could conatct me through my Official Whatsapp No - 0764539268 for
+          your requirements
+        </p>
+        
+		<img id="Photo" src="./photos/dilini.JPG"  width="250" height="250" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+/*--------------------Presentation Page-------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --green: #27ae60;
+  --dark-color: #219150;
+  --black: #444;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: var(--green);
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--dark-color);
+}
+
+.header .header-1 {
+  background: #fff;
+  padding: 1.5rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header-1 .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .header-1 .logo i {
+  color: var(--green);
+}
+
+.header .header-1 .search-form {
+  width: 50rem;
+  height: 5rem;
+  border: var(--border);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.header .header-1 .search-form input {
+  font-size: 1.6rem;
+  padding: 0 1.2rem;
+  height: 100%;
+  width: 100%;
+  text-transform: none;
+  color: var(--black);
+}
+
+.header .header-1 .search-form label {
+  font-size: 2.5rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .header-1 .search-form label:hover {
+  color: var(--green);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a {
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover {
+  color: var(--green);
+}
+
+#search-btn {
+  display: none;
+}
+
+.header .header-2 {
+  background: var(--green);
+}
+
+.header .header-2 .navbar {
+  text-align: center;
+}
+
+.header .header-2 .navbar a {
+  color: #fff;
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover {
+  background: var(--dark-color);
+}
+
+.header .header-2.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/*--------------------------------------------------------------*/
+
+#pheader {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #222224;
+}
+
+.bg {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+
+.phead1 {
+  text-align: center;
+  font-size: large;
+  padding: 2rem;
+}
+
+p {
+  text-align: center;
+  font-size: medium;
+  padding: 2rem;
+}
+
+.phead2 {
+  text-align: center;
+  font-size: large;
+  padding: 1rem;
+}
+
+.plist {
+  text-align: center;
+  font-size: medium;
+  padding: 1rem;
+}
+
+#editortag {
+  position: relative;
+  top: 170px;
+  left: -550px;
+}
+
+#fullname,
+#Email {
+  height: 25px;
+  background-color: #e7deded6;
+  border-color: black;
+  width: 650px;
+}
+
+.first_label {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-right: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.second_label {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-bottom: 55px;
+  margin-right: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+#submit1 {
+  font-weight: bold;
+  width: 100%;
+  color: #1ac714;
+  border: 1px solid;
+  border-radius: 30px;
+  height: 50px;
+  padding: 0px 28px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#submit1:hover {
+  background-color: #18ba03;
+  /* Green */
+  color: white;
+
+}
+
+
+
+#link {
+  font-size: 20px;
+  color: #76bfea;
+  align-items: ri;
+}
+
+#link:hover {
+  color: #2000f0;
+
+}
+
+h1 {
+  color: #27ae60;
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body,
+div,
+form,
+input,
+select,
+p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h3 {
+  margin: 12px 0;
+  color: #8ebf42;
+}
+
+.main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+}
+
+fieldset {
+  border: none;
+  border-top: 1px solid #8ebf42;
+}
+
+.account-details,
+.personal-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.account-details>div,
+.personal-details>div>div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.account-details>div,
+.personal-details>div,
+input,
+label {
+  width: 100%;
+}
+
+label {
+  padding: 0 5px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+input {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#f {
+  position: relative;
+  top: 80px;
+  left: -620px;
+  font-size: medium;
+}
+
+#hr {
+  position: relative;
+  top: 80px;
+  width: 180%;
+  left: -620px;
+}

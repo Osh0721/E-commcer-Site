@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBUY | Gallery</title>
+    <script
+      src="https://kit.fontawesome.com/b994a6c611.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Gallery.css" />
+  </head>
+  
+  <body>
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo">
+          <i class="fas fa-shopping-cart"></i> EBUY.com
+        </a>
+
+        <form action="" class="search-form">
+          <input type="search" name=""placeholder="Search here..." id="search-box"/>
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+          
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="home.html"><p id = "p1">Home</p></a>
+          <a href="Productpage.html"><p id = "p1">Shop Now</p></a>
+          <a href="About us.html"><p id = "p1">About Us</p></a>
+          <a href="Presentation.html">Presentation Page</a>
+          <a href="Gallery.html"> Gallery</a>
+          <a href="formDineth.html"> Sign Up</a>
+          <a href="newsletter.html">Newsletter</a>
+          
+        </nav>
+      </div>
+    </header>
+
+    <section id="page-header">
+      <h2 id = "startdes1">#stayhome</h2>
+      <p id="startdes2">Save more with coupons & up to 70% off!</p>
+    </section>
+
+    <div class = "background">
+
+    <div class="container1">
+      Your Selection
+      <div class="main_view">
+        <img src="images/WhiteB.jpg" id="main" alt="white background" />
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="main_desciption">
+        <p id="description">Product Description<br><br><br></p>
+        <p id="description2"></p>
+      </div>
+    </div>  
+
+    <section id="product1" class="section-p1">
+
+      <div class="pro-container">
+        
+        <div class="pro">
+          <img id="myImage" src="images/watch.jpg" alt="Smart Watch" />
+          <div class="des">
+            <span>AinooMax Q9</span>
+            <h5> Smart Watch</h5>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img id="myImage1" src="images/humidifier.jpeg" alt="Humidifier"  />
+          <div class="des">
+            <span>Sanyo</span>
+            <h5>Humidifier </h5>
+          </div>
+        </div>    
+          
+        <div class="pro">
+          <img id="myImage2" src="images/belt.jpg" alt="Brown Leather Belt" />
+          <div class="des">
+            <span>Diesel</span>
+            <h5>Brown Leather Belt</h5>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img id="myImage3" src="images/f4.jpg" alt="Long straight-leg jeans" />
+          <div class="des">
+            <span>Jil Sander</span>
+            <h5>Long straight-leg jeans</h5>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img id="myImage4" src="images/redF.jpg" alt="Limao halterneck dress" />
+          <div class="des">
+            <span>Jacquemus</span>
+            <h5>Limao halterneck dress</h5>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img id="myImage5" src="images/greenS.jpg" alt="Box-pleated maxi skirt"/>
+          <div class="des">
+            <span>Pinko</span>
+            <h5>Box-pleated maxi skirt</h5>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img id="myImage6" src="images/blueT.jpg" alt="Salvatore Lennox slim-cut jeans"/>
+          <div class="des">
+            <span>Paige</span>
+            <h5>Salvatore Lennox slim-cut jeans</h5>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img id="myImage7" src="images/orangeT.jpg" alt="Loose-fit jeans"/>
+          <div class="des">
+            <span>Dolce & Gabbana</span>
+            <h5>Loose-fit jeans</h5>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img id="myImage8" src="images/greenSS.jpg" alt="Palma plain shirt"/>
+          <div class="des">
+            <span>Jacquemus</span>
+            <h5>Palma plain shirt</h5>
+          </div>
+        </div>
+      </div>
+      
+      <hr id = "hr" size="8" width="100%" color="#219150"> 
+      <div><a href="Editors.html"><p id = "editortag">Editor's Page</p></a></div>
+
+    </section>
+    
+    <script type="text/javascript">
+      
+      document.getElementById("myImage").onclick = function() {myFunction()};
+      function myFunction() {
+        document.getElementById("description2").innerHTML = "Brand Name:Ainoomax,Place of Origin:China,Screen Resolution:320x240,Operation System:ANDROID,Band Material:Rubber,Function:Call, Dial Call, Remote Control, Sleep Tracker,Feature:Touch Screen";
+        document.getElementById("main").src = document.getElementById("myImage").src}
+
+      document.getElementById("myImage1").onclick = function() {myFunction1()};
+      function myFunction1() {
+        document.getElementById("description2").innerHTML = "Noise:<36db,Installation:Tabletop / Portable,Voltage (V):5,Capacity:220ml,App-Controlled:No,Power Source:usb, Battery,Electric,Accessories:usb Mini Fan/USB Lamp,Humidity Control:Humidistat";
+        document.getElementById("main").src = document.getElementById("myImage1").src}
+
+      document.getElementById("myImage2").onclick = function() {myFunction2()};
+      function myFunction2() {
+        document.getElementById("description2").innerHTML = "Place of Origin:Zhejiang, China,buckle weight:40g,Width:3.8CM,Buckle material:Alloy,Feature:Comfortable";
+        document.getElementById("main").src = document.getElementById("myImage2").src}
+
+      document.getElementById("myImage3").onclick = function() {myFunction3()};
+      function myFunction3() {
+        document.getElementById("description2").innerHTML = "Double down on your denim collection. Jil Sander keeps it simple with this straight-leg silhouette. You'll make effortless off-duty style look like a walk in the park.";
+        document.getElementById("main").src = document.getElementById("myImage3").src}
+
+      document.getElementById("myImage4").onclick = function() {myFunction4()};
+      function myFunction4() {
+        document.getElementById("description2").innerHTML = "One of the defining pieces of Jacquemus' SS22 'Le Splash' collection, the Limao dress is described by the brand as the 'bikini mini dress'. Appearing here in a vibrant pink shade, the dress is defined by its halterneck silhouette that reveals an open back, detailed by signature delicate bra straps.";
+        document.getElementById("main").src = document.getElementById("myImage4").src}
+
+      document.getElementById("myImage5").onclick = function() {myFunction5()};
+      function myFunction5() {
+        document.getElementById("description2").innerHTML = "Pinko makes a statement with this dramatic maxi skirt. The bold bottle-green hued piece has a full silhouette, accented by classic box pleats and a high-low hem for timeless appeal.";
+        document.getElementById("main").src = document.getElementById("myImage5").src}
+
+      document.getElementById("myImage6").onclick = function() {myFunction6()};
+      function myFunction6() {
+        document.getElementById("description2").innerHTML = "Crafted from stretch denim, PAIGE's Lennon jeans are cut for a slim fit and feature a mid-rise design. Showcasing a medium wash, they boast a classic five-pocket design and fasten with a button and zip fastening at the front.";
+        document.getElementById("main").src = document.getElementById("myImage6").src}
+        
+      document.getElementById("myImage7").onclick = function() {myFunction7()};
+      function myFunction7() {
+        document.getElementById("description2").innerHTML = "'Logomania' - the trend that was born in the 1990s is now back in full force, with designers boldly showcasing their iconic branding across their clothing and accessories. These coral red cotton slim-fit jeans from Dolce & Gabbana feature a waistband with belt loops, a fly front, a slim-fit, a regular length and side pockets.";
+        document.getElementById("main").src = document.getElementById("myImage7").src}
+        
+      document.getElementById("myImage8").onclick = function() {myFunction8()};
+      function myFunction8() {
+        document.getElementById("description2").innerHTML = "Jacquemus continues to display its joyful attitude through uplifting patterns and colours. This long-sleeved shirt is a prime example of that with its soothing blue colourway and jacquard floral motifs.";
+        document.getElementById("main").src = document.getElementById("myImage8").src}
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBUY | Signup</title>
+    <script
+      src="https://kit.fontawesome.com/b994a6c611.js"
+      crossorigin="anonymous"
+    ></script>
+      <link rel="stylesheet" href="Signup.css" />
+  </head>
+  
+  <body>
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo">
+          <i class="fas fa-shopping-cart"></i> EBUY.com
+        </a>
+
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="Search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+          
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="home.html">Home</a>
+          <a href="Productpage.html">Shop Now</a>
+          <a href="About us.html">About Us</a>
+          <a href="Presentation.html">Presentation Page</a>
+          <a href="Gallery.html"> Gallery</a>
+          <a href="formDineth.html"> Sign Up</a>
+          <a href="newsletter.html">Newsletter</a>
+        </nav>
+      </div>
+    </header>
+
+<div class="background">
+  
+    <div class="sform"><h2>Sign Up Form</h2></div>
+
+    <div class="smain">
+      <form name="SignUpForm" id="form" action="" >
+
+          <div id="name">
+              <h2 class="name1">Name</h2> 
+              <input class="firstname" type="text" id="fname" name="fname" value="John" /><br />
+              <label class="firstlabel" for="fname">First Name:</label>
+              <input class="lastname" type="text" id="lname" name="lname" value="Doe" /><br />
+              <label class="lastlabel" for="lname">Last name:</label>
+          </div>
+
+              <h2 class="name2">Occupation</h2>
+              <input class="occupation" type="text" id="occupation" name="occupation" value="Doctor" />
+          
+              <h2 class="name3">Age</h2>
+              <input class="age" type="text" id="age" name="age" value="18" />
+          
+              <h2 class="name4">Gender</h2>
+              <select id="gender" name="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Not prefer to say">Not prefer to say</option></select>  
+          
+              <h2 class="name5">Email</h2>
+              <input class="email" type="text" id="email" name="email" value="abc@gmail.com"/>
+              
+              <h2 class="name6">Phone</h2>
+              <input class="code" type="text" name="areacode" value="+94" /><br />
+              <label class="area-code">Area Code</label>
+              <input class="number" type="text" name="phone" value="0112843567">
+              <label class="phone-number">Phone Number</label>
+
+              <h2 class="name8">User Preference</h2>
+              <label class="option1_1" > Fashion</label><br>
+              <select id="choice" name="choice">
+              <option value="Kids">Kids Wear</option>
+              <option value="Men">Mens' Wear</option>
+              <option value="Lady">Ladies Wear</option></select>
+
+              <label class="option1_2" > Electronics</label><br>
+              <select id="choice1" name="choice1">
+              <option value="Kitchen">Kitchen Equipments</option>
+              <option value="Livingroom">Livingroom Equipments</option>
+              <option value="Smart">Smart Devices</option></select>
+
+              <label class="option1_3" for="kids"> Food Items</label><br>
+              <select id="choice2" name="choice2">
+              <option value="Flour">Flour Products</option>
+              <option value="Dairy">Dairy Products</option>
+              <option value="Vegetable">Vegetables</option></select>
+              
+              <h2 class="name7">Results per page</h2>
+              <select class="results" type="number" id="result" name="results">
+                  <option>5</option>
+                  <option>6</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>15</option>
+              </select><br><br>
+              
+              <input id="btn1-grad" type="submit" value="Sign Up" onclick = "signupform(this.form)">
+              <input id="btn1-grad" type="reset" value="Refresh">     
+              
+        </div>
+      </form> 
+            <hr size="8" width="100%" color="#219150">  
+            <p id = "f"><a href="Editors.html">Editor's Page</a></p>
+    </div>
+</div>
+<script >
+  function signupform() {
+
+          let namef = document.forms["SignUpForm"].fname.value;
+          let namel = document.forms["SignUpForm"].lname.value;
+          let occupationc = document.forms["SignUpForm"].occupation.value;
+          let emailc = document.forms["SignUpForm"].email.value;
+          let areac = document.forms["SignUpForm"].areacode.value;
+          let phonec = document.forms["SignUpForm"].phone.value;
+          let resultc = document.forms["SignUpForm"].results.value;
+          let genderc = document.forms["SignUpForm"].gender.value;
+          let agec = document.forms["SignUpForm"].age.value;
+          let choicec = document.forms["SignUpForm"].choice.value;
+          let choice1c = document.forms["SignUpForm"].choice1.value;
+          let choice2c = document.forms["SignUpForm"].choice2.value;
+         
+  
+          if (namef == "") {
+              alert("Please enter your first name.");
+
+            } 
+            
+          else if (namel == "") {
+              alert("Please enter your last name.");
+              
+          }
+    
+          else if (occupationc == "") {
+              alert("Please enter your occupation.");
+                            
+          }
+
+          else if (agec == "") {
+              alert("Please enter your age.");
+                            
+          }
+    
+          else if (emailc == "") {
+              alert("Please enter a valid e-mail address.");
+                            
+          }
+    
+          else if (phonec == "") {
+              alert("Please enter your telephone number.");
+             
+          }
+
+          else if (areac == "") {
+              alert("Please enter the area code.");
+              }
+  
+          else if (resultc.selectedIndex < 1) {
+          alert("Please enter the relevant value");
+          }
+
+          else if (genderc.selectedIndex < 1) {
+              alert("Please enter the relevant value");
+                         
+          }
+
+          else if (choicec.selectedIndex < 1) {
+              alert("Please enter the relevant value");
+                         
+          }
+
+          else if (choice1c.selectedIndex < 1) {
+              alert("Please enter the relevant value");
+                         
+          }
+
+          else if (choice2c.selectedIndex < 1) {
+              alert("Please enter the relevant value");
+                         
+          }
+
+          else {
+              alert("Dear" + " " + namef + " " + ",Thank you for using Signing Up with us, the recommended results will be shown in a while")
+            }
+                            
+        };
+
+              
+  </script>
+  </body>
+</html>

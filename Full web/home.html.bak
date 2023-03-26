@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBUY | Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo">
+          <i class="fas fa-shopping-cart"></i> EBUY.com
+        </a>
+
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="Search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+		
+          <!--<div id="search-btn" class="fas fa-search"></div>
+          <div id="login-btn" class="fas fa-user"></div>
+          <a href="#" class="fas fa-bell"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>-->
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="home.html">Home</a>
+          <a href="Productpage.html">Shop Now</a>
+          <a href="About us.html">About Us</a>
+          <a href="Presentation.html">Presentation Page</a>
+          <a href="Gallery.html"> Gallery</a>
+          <a href="formDineth.html"> Sign Up</a>
+          <a href="newsletter.html">Newsletter</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--slideshow start-->
+    <div class="slideshow-container">
+      <div class="slideshow">
+        <img src="photos/electronics.jpg" style="width: 100%" />
+        <div class="text"><b>Electronics</b></div>
+      </div>
+
+      <div class="slideshow">
+        <img src="photos/fashion.jpg" style="width: 100%" />
+        <div class="text"><b>Fashion</b></div>
+      </div>
+
+      <div class="slideshow">
+        <img src="photos/health&beauty.jpg" style="width: 100%" />
+        <div class="text"><b>Health & Beauty</b></div>
+      </div>
+
+      <div class="slideshow">
+        <img src="photos/home&garden.jpg" style="width: 100%" />
+        <div class="text"><b>Home & Garden</b></div>
+      </div>
+
+      <div class="slideshow">
+        <img src="photos/sports.jpg" style="width: 100%" />
+        <div class="text"><b>Sports</b></div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!--slideshow-end-->
+
+    <!--Video-->
+
+    <div class="video">
+      <br /><br /><br /><br />
+      <center>
+        <video class="T20" height="500px" width="800px" controls>
+          <source src="../video/What is eCommerce.mp4" type="video/mp4" />
+          <source src="mov_bbb.ogg" type="video/ogg" />
+          Your browser does not support HTML video.
+        </video>
+      </center>
+    </div>
+
+    <br />
+
+    <!--comment form-->
+    <div class="form">
+      <div class="container">
+        <div class="title">Comment Form</div>
+        <div class="content">
+          <form
+            name="commentform"
+            action="#"
+            onsubmit="return validateForm()"
+            method="post"
+          >
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Comment</span>
+                <textarea
+                  id="comment"
+                  name="comment"
+                  id="comment"
+                  placeholder="Enter your comments"
+                >
+                </textarea>
+              </div>
+            </div>
+
+            <!-- Rate option"-->
+            <div class="rating">
+              <span id="rate-us">Rate Us</span><br />
+
+              <input type="radio" id="star5" name="rate" value="Excellent" />
+              <label for="star5" title="text">5 stars</label>
+
+              <input type="radio" id="star4" name="rate" value="Very good" />
+              <label for="star4" title="text">4 stars</label>
+
+              <input type="radio" id="star3" name="rate" value="Good" />
+              <label for="star3" title="text">3 stars</label>
+
+              <input type="radio" id="star2" name="rate" value="Weak" />
+              <label for="star2" title="text">2 stars</label>
+
+              <input type="radio" id="star1" name="rate" value="Poor" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+
+            <br /><br />
+            <div class="button">
+              <div class="button-1">
+                <input type="submit" name="submit" value="Submit" />
+              </div>
+              <br />
+              <div class="button-2">
+                <input type="reset" name="reset form" value="Reset" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--editor-->
+    <div id="editor">
+      <a href="./editor-dilini.html"> <b>Editor</b> </a>
+    </div>
+
+    <!-- js code-->
+
+    <script>
+      //slide show
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slideshow");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+
+      //comment form
+      function validateForm() {
+        let name = document.getElementById("fname").value;
+        if (name == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+
+        let email = document.getElementById("email").value;
+        if (email == "") {
+          alert("email must be filled out");
+          return false;
+        }
+
+        let comment = document.getElementById("comment").value;
+
+        let rate = "";
+        if (document.getElementById("star1").checked) {
+          rate = document.getElementById("star1").value;
+        } else if (document.getElementById("star2").checked) {
+          rate = document.getElementById("star2").value;
+        } else if (document.getElementById("star3").checked) {
+          rate = document.getElementById("star3").value;
+        } else if (document.getElementById("star4").checked) {
+          rate = document.getElementById("star4").value;
+        } else if (document.getElementById("star5").checked) {
+          rate = document.getElementById("star5").value;
+        }
+
+        if ((rate == "") | (rate == null)) {
+          alert("Rating part must be filled out");
+          return false;
+        }
+
+        alert(
+          "Dear " +
+            name +
+            ",\nThank you very much for your feedback.\nYou have rated our site as " +
+            rate +
+            " and your comment was " +
+            comment +
+            "."
+        );
+      }
+    </script>
+  </body>
+</html>
